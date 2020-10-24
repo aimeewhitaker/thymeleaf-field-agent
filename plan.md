@@ -3,15 +3,15 @@
 - total time expected: 16.3 hours
 - total time actual:
 
-- [ ] Review project methods and classes (e: 45 min | a:)
+- [x] Review project methods and classes (e: 45 min | a: 20 min)
 
 - SecurityClearanceJdbcTemplateRepository class
     - add these methods:
-        - [ ] findAll() (e: 10 min | a:)
-        - [ ] findById() (e: 10 min | a:)
-        - [ ] add() (e: 20 min | a:)
-        - [ ] update() (e: 10 min | a:)
-        - [ ] delete() (e: 10 min | a:)
+        - [x] findAll() (e: 10 min | a: 5 min)
+        - [x] findById() (e: 10 min | a: 5 min)
+        - [x] add() (e: 20 min | a: 5 min)
+        - [x] update() (e: 10 min | a: 5 min)
+        - [x] deleteById() (e: 10 min | a: 5 min)
 
 - create SecurityClearanceJdbcTemplateRepositoryTest class
     - [ ] create positive and negative tests (e: 45 min | a:)
