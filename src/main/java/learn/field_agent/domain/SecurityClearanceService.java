@@ -73,7 +73,7 @@ public class SecurityClearanceService {
             return result;
         }
         if (!repository.deleteById(securityClearanceId)) {
-            result.addMessage("could not delete", ResultType.INVALID);
+            result.addMessage("could not delete", ResultType.NOT_FOUND);
             return result;
         }
         result.addMessage("", ResultType.SUCCESS);

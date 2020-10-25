@@ -15,6 +15,17 @@ public class Agent {
     private List<Mission> missions;
     private List<AgentAgency> agencies = new ArrayList<>();
 
+    public Agent() {}
+
+    public Agent(int agentId, String firstName, String middleName, String lastName, LocalDate dob, int heightInInches) {
+        this.agentId = agentId;
+        this.firstName = firstName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.dob = dob;
+        this.heightInInches = heightInInches;
+    }
+
     public int getAgentId() {
         return agentId;
     }

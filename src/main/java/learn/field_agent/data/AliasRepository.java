@@ -9,9 +9,7 @@ public interface AliasRepository {
 
     List<Alias> findAll();
 
-    Alias findAlias(int aliasId);
-
-    Agent findAgent(int agentId);
+    List<Alias> findAliasesByAgentId(int agentId);
 
     Alias add(Alias alias);
 

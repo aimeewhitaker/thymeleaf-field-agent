@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Repository
 public class AliasJdbcTemplateRepository implements AliasRepository {
@@ -25,36 +26,21 @@ public class AliasJdbcTemplateRepository implements AliasRepository {
     }
 
     @Override
-    @Transactional
     public List<Alias> findAll() {
-        final String sql = "select alias_id, name, persona, agent_id "
-                + "from alias limit 1000;";
-
-        return jdbcTemplate.query(sql, new AliasMapper());
+        final String sql = "select * "
+                + "from alias;";
+        return jdbcTemplate.query(sql, new AliasMapper()).stream()
+                .collect(Collectors.toList());
     }
 
     @Override
     @Transactional
-    public Alias findAlias(int aliasId) {
-        final String sql = "select alias_id, name, persona, agent_id "
+    public List<Alias> findAliasesByAgentId(int agentId) {
+        final String sql = "select * "
                 + "from alias "
-                + "where alias_id = ?;";
-
-        return jdbcTemplate.query(sql, new AliasMapper(), aliasId)
-                .stream()
-                .findFirst().orElse(null);
-    }
-
-    @Override
-    public Agent findAgent(int agentId) {
-        final String sql = "select aa.agent_id, aa.first_name, aa.middle_name, aa.last_name, aa.dob, aa.height_in_inches "
-                + "from alias a "
-                + "join agent aa on aa.agent_id = a.agent_id "
-                + "where a.agent_id = ?;";
-
-        return jdbcTemplate.query(sql, new AgentMapper(), agentId)
-                .stream()
-                .findFirst().orElse(null);
+                + "where agent_id = ?;";
+        return jdbcTemplate.query(sql, new AliasMapper(), agentId).stream()
+                .collect(Collectors.toList());
     }
 
     @Override

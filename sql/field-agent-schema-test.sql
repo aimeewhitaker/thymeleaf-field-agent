@@ -146,6 +146,11 @@ begin
     inner join agent
     where agent.agent_id not in (6, 8)
     and agency.agency_id != 2;
+    
+    delete from alias;
+    alter table alias auto_increment = 1;
+    
+    insert into alias (name, persona, agent_id) values ("Juicy Lucy", null, 1);
 
 end //
 -- 4. Change the statement terminator back to the original.
