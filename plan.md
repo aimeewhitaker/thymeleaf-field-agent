@@ -14,26 +14,26 @@
         - [x] deleteById() (e: 10 min | a: 5 min)
 
 - create SecurityClearanceJdbcTemplateRepositoryTest class
-    - [ ] create positive and negative tests (e: 45 min | a:)
-    - [ ] use spring boot to configure (e: 10 min | a:)
+    - [X] create positive and negative tests (e: 45 min | a: 1 hr)
+    - [x] use spring boot to configure (e: 10 min | a: 0 min)
     
 - create SecurityClearanceService class
     - rules: 
         1. Security clearance name is required.
         2. Name cannot be duplicated.
     - add these methods:
-        - [ ] findAll() (e: 20 min | a:)
-        - [ ] findById() (e: 20 min | a:)
-        - [ ] add() (e: 30 min | a:)
-        - [ ] update() (e: 30 min | a:)
-        - [ ] delete() (e: 20 min | a:)
-        - [ ] validate() (e: 15 min | a:)
+        - [x] findAll() (e: 20 min | a: 5 min)
+        - [x] findById() (e: 20 min | a: 5 min)
+        - [x] add() (e: 30 min | a: 10 min)
+        - [x] update() (e: 30 min | a: 5 min)
+        - [x] delete() (e: 20 min | a: 5 min)
+        - [x] validate() (e: 15 min | a: 5 min)
         
 - create SecurityClearanceServiceTest class
     - [ ] create positive and negative tests (e: 45 min | a:)
     - use spring boot
-        - [ ] MockBean for repo (e: 5 min | a:)
-        - [ ] Autowired for service (e: 5 min | a:)
+        - [x] MockBean for repo (e: 5 min | a: 1 min)
+        - [x] Autowired for service (e: 5 min | a: 1 min)
         
 - create SecurityClearanceController class
     - use RestController

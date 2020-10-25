@@ -12,6 +12,17 @@ public class AgencyAgent {
     private Agent agent;
     private SecurityClearance securityClearance;
 
+    public AgencyAgent() {}
+
+    public AgencyAgent(int agencyId, String identifier, LocalDate activationDate, boolean active, Agent agent, SecurityClearance securityClearance) {
+        this.agencyId = agencyId;
+        this.identifier = identifier;
+        this.activationDate = activationDate;
+        this.active = active;
+        this.agent = agent;
+        this.securityClearance = securityClearance;
+    }
+
     public int getAgencyId() {
         return agencyId;
     }
