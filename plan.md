@@ -30,7 +30,7 @@
         - [x] validate() (e: 15 min | a: 5 min)
         
 - create SecurityClearanceServiceTest class
-    - [ ] create positive and negative tests (e: 45 min | a:)
+    - [x] create positive and negative tests (e: 45 min | a: 1.5 hrs)
     - use spring boot
         - [x] MockBean for repo (e: 5 min | a: 1 min)
         - [x] Autowired for service (e: 5 min | a: 1 min)
@@ -38,42 +38,46 @@
 - create SecurityClearanceController class
     - use RestController
     - @GetMapping
-        - [ ] findAll() (e: 20 min | a:)
-        - [ ] findById() (e: 20 min | a:)
+        - [x] findAll() (e: 20 min | a: 5 min)
+        - [x] findById() (e: 20 min | a: 5 min)
     - @PostMapping
-        - [ ] add() (e: 20 min | a:)
+        - [x] add() (e: 20 min | a: 5 min)
     - @PutMapping
-        - [ ] update()(e: 20 min | a:)
+        - [x] update()(e: 20 min | a: 5 min)
     - @DeleteMapping
-        - [ ] delete() (e: 20 min | a:)
+        - [x] delete() (e: 20 min | a: 5 min)
         
 - create SecurityClearanceControllerTest class
-    - [ ] use @SpringBootTest and @AutoConfigureMockMvc (e: 20 min | a:)
-    - [ ] create positive and negative tests (e: 45 min | a:)
+    - [x] use @SpringBootTest and @AutoConfigureMockMvc (e: 20 min | a: 5 min)
+    - [x] create positive and negative tests (e: 45 min | a: 45 min)
 
 - create Alias class in models
-    - [ ] fields: (e: 10 min | a:)
+    - [x] fields: (e: 10 min | a: 10 min)
         - aliasId
         - agentId
         - name
         - persona
-    - [ ] generate getters & setters (e: 5 min | a:)
+    - [x] generate getters & setters (e: 5 min | a: 1 min)
     
 - create AliasRepository Interface
-    - [ ] method headers (e: 15 min | a:)
+    - [x] method headers (e: 15 min | a: 15 min)
         - findAll()
+        - findAlias()
         - findAgent()
         - add()
         - update()
-        - delete()
+        - deletebyId()
+        
+- [x] create AliasMapper (e: 15 min | a: 10 min)
 
 - create AliasRepositoryJdbcTemplateRepository class
     - implement methods from interface
-        - [ ] findAll() (e: 10 min | a:)
-        - [ ] findAgent() (e: 10 min | a:)
-        - [ ] add()c(e: 15 min | a:)
-        - [ ] update() (e: 15 min | a:)
-        - [ ] delete() (e: 10 min | a:)
+        - [x] findAlias() (e: 10 min | a: 5 min)
+        - [x] findAll() (e: 10 min | a: 5 min)
+        - [x] findAgent() (e: 10 min | a: 5 min)
+        - [x] add() (e: 15 min | a: 5 min)
+        - [x] update() (e: 15 min | a: 5 min)
+        - [x] deleteById() (e: 10 min | a: 5 min)
 
 - create AliasRepositoryJdbcTemplateRepositoryTest class
     - [ ] create positive and negative tests (e: 45 min | a:)
