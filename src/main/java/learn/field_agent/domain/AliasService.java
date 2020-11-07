@@ -7,6 +7,7 @@ import learn.field_agent.models.Alias;
 import learn.field_agent.models.SecurityClearance;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -21,8 +22,11 @@ public class AliasService {
         this.agentRepository = agentRepository;
     }
 
-    public List<Alias> findAliasesByAgentId(int agentId) {
-        return repository.findAliasesByAgentId(agentId);
+    public List<Object> findAliasesByAgentId(int agentId) {
+        List<Object> comboList = new ArrayList();
+        comboList.add(agentRepository.findById(agentId));
+        comboList.add(repository.findAliasesByAgentId(agentId));
+        return comboList;
     }
 
     public Result<Alias> add(Alias alias) {

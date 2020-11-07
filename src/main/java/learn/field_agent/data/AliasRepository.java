@@ -9,7 +9,7 @@ public interface AliasRepository {
 
     List<Alias> findAll();
 
-    List<Alias> findAliasesByAgentId(int agentId);
+    List<Object> findAliasesByAgentId(int agentId);
 
     Alias add(Alias alias);
 

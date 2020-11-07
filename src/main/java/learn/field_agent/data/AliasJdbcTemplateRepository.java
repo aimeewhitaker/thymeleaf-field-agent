@@ -21,7 +21,10 @@ public class AliasJdbcTemplateRepository implements AliasRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    public AliasJdbcTemplateRepository(JdbcTemplate jdbcTemplate) {
+    private final AgentRepository repository;
+
+    public AliasJdbcTemplateRepository(JdbcTemplate jdbcTemplate, AgentRepository repository) {
+        this.repository = repository;
         this.jdbcTemplate = jdbcTemplate;
     }
 
@@ -35,10 +38,10 @@ public class AliasJdbcTemplateRepository implements AliasRepository {
 
     @Override
     @Transactional
-    public List<Alias> findAliasesByAgentId(int agentId) {
-        final String sql = "select * "
-                + "from alias "
-                + "where agent_id = ?;";
+    public List<Object> findAliasesByAgentId(int agentId) {
+        final String sql = "select a.alias_id, a.name, a.persona, a.agent_id "
+                + "from alias a "
+                + "where a.agent_id = ?;";
         return jdbcTemplate.query(sql, new AliasMapper(), agentId).stream()
                 .collect(Collectors.toList());
     }
@@ -63,6 +66,10 @@ public class AliasJdbcTemplateRepository implements AliasRepository {
         }
 
         alias.setAliasId(keyHolder.getKey().intValue());
+
+        //add alias to agent
+        (repository.findById(alias.getAgentId())).getAliases().add(alias);
+
         return alias;
     }
 
