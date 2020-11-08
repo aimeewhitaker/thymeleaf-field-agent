@@ -1,5 +1,11 @@
 package learn.field_agent.models;
 
+import learn.field_agent.validation.NoChildrenAgents;
+import org.springframework.format.annotation.DateTimeFormat;
+
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotBlank;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,11 +13,23 @@ import java.util.List;
 public class Agent {
 
     private int agentId;
+
+    @NotBlank
     private String firstName;
+
     private String middleName;
+
+    @NotBlank
     private String lastName;
+
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @NoChildrenAgents(message = "must be twelve years of age or older")
     private LocalDate dob;
+
+    @Min(value = 36, message = "height must be between 36 and 96 inches")
+    @Max(value = 96, message = "height must be between 36 and 96 inches")
     private int heightInInches;
+
     private List<Mission> missions;
     private List<AgentAgency> agencies = new ArrayList<>();
     private List<Alias> aliases;

@@ -23,19 +23,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02627fea-e880-4ea4-8bcf-0e77e5a60c35" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/AgentUiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_3_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_4_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/FieldAgentUIController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/validation/NoChildValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/validation/NoChildrenAgents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/agents/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/agents/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/field-agent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/field-agent.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plan.md" beforeDir="false" afterPath="$PROJECT_DIR$/plan.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/AliasController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/AliasController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/ErrorResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/ErrorResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/AliasJdbcTemplateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/AliasJdbcTemplateRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/AliasRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/AliasRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/domain/AliasService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/domain/AliasService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/AgentUiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/AgentUiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/controllers/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/AgentJdbcTemplateRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/AgentJdbcTemplateRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/mappers/AgentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/data/mappers/AgentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/domain/AgentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/domain/AgentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/learn/field_agent/models/Agent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/learn/field_agent/models/Agent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agents/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/agents.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/agents/agents.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/agents.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +92,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aeliz\Desktop\bootCamp\thymeleaf-field-agent\src\main\resources\templates\agents" />
       <recent name="C:\Users\aeliz\Desktop\bootCamp\thymeleaf-field-agent\src\main\resources\templates" />
       <recent name="C:\Users\aeliz\Desktop\bootCamp\thymeleaf-field-agent\src\main\resources" />
     </key>
@@ -121,41 +141,61 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1604768679862">
+    <state x="2685" y="226" key="#com.intellij.ide.util.MemberChooser" timestamp="1604860916111">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768679862" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1604768679862">
+    <state x="2685" y="226" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604860916111" />
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom" timestamp="1604875932143">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768679862" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1604768679861">
+    <state width="1877" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875932143" />
+    <state width="1877" height="253" key="GridCell.Tab.0.center" timestamp="1604875932143">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768679861" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1604768679862">
+    <state width="1877" height="253" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875932143" />
+    <state width="1877" height="253" key="GridCell.Tab.0.left" timestamp="1604875932142">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768679862" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1604768247706">
+    <state width="1877" height="253" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875932142" />
+    <state width="1877" height="253" key="GridCell.Tab.0.right" timestamp="1604875932143">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768247706" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1604768247706">
+    <state width="1877" height="253" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875932143" />
+    <state width="1877" height="179" key="GridCell.Tab.1.bottom" timestamp="1604875678751">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768247706" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1604768247705">
+    <state width="1877" height="179" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875678751" />
+    <state width="1877" height="179" key="GridCell.Tab.1.center" timestamp="1604875678751">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768247705" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1604768247706">
+    <state width="1877" height="179" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875678751" />
+    <state width="1877" height="179" key="GridCell.Tab.1.left" timestamp="1604875678750">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604768247706" />
+    <state width="1877" height="179" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875678750" />
+    <state width="1877" height="179" key="GridCell.Tab.1.right" timestamp="1604875678751">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="179" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604875678751" />
     <state x="2536" y="240" key="run.anything.popup" timestamp="1604765082440">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2536" y="240" key="run.anything.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1604765082440" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/learn/field_agent/data/AgentJdbcTemplateRepository.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/learn/field_agent/domain/AgentService.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

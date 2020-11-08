@@ -17,6 +17,8 @@ public class AgentMapper implements RowMapper<Agent> {
         agent.setLastName(resultSet.getString("last_name"));
         if (resultSet.getDate("dob") != null) {
             agent.setDob(resultSet.getDate("dob").toLocalDate());
+        } else {
+            agent.setDob(null);
         }
         agent.setHeightInInches(resultSet.getInt("height_in_inches"));
         return agent;

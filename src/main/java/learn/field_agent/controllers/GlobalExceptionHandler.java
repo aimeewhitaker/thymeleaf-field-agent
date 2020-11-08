@@ -15,9 +15,8 @@ public class GlobalExceptionHandler {
     // including BadSqlGrammarException.
     @ExceptionHandler(DataAccessException.class)
     public ResponseEntity<ErrorResponse> handleException(DataAccessException ex) {
-
         // Log the exception?
-
+        ex.printStackTrace();
         return new ResponseEntity<ErrorResponse>(
                 new ErrorResponse("We can't show you the details, but something went wrong in our database. Sorry :("),
                 HttpStatus.INTERNAL_SERVER_ERROR);
@@ -27,7 +26,7 @@ public class GlobalExceptionHandler {
     // including all formatting (number, date) exceptions.
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<ErrorResponse> handleException(IllegalArgumentException ex) {
-
+        ex.printStackTrace();
         // Log the exception?
 
         return new ResponseEntity<ErrorResponse>(
@@ -38,7 +37,7 @@ public class GlobalExceptionHandler {
     // This is our absolute last resort. Yuck.
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ErrorResponse> handleException(Exception ex) {
-
+        ex.printStackTrace();
         // Log the exception?
 
         return new ResponseEntity<ErrorResponse>(

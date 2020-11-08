@@ -2,6 +2,7 @@ package learn.field_agent.domain;
 
 import learn.field_agent.data.AgentRepository;
 import learn.field_agent.models.Agent;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -10,11 +11,8 @@ import java.util.List;
 @Service
 public class AgentService {
 
-    private final AgentRepository repository;
-
-    public AgentService(AgentRepository repository) {
-        this.repository = repository;
-    }
+    @Autowired
+    AgentRepository repository;
 
     public List<Agent> findAll() {
         return repository.findAll();

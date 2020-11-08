@@ -14,6 +14,9 @@
         <div class="col ml-auto">
             <a href="/agents/add" class="btn btn-primary mt-2">Add an Agent</a>
         </div>
+        <div class="col ml-auto">
+            <a href="/" class="btn btn-primary mt-2">View Home</a>
+        </div>
     </div>
     <table class="table table-striped">
         <thead>
@@ -22,6 +25,7 @@
             <th>First Name</th>
             <th>Last Name</th>
             <th>Date of Birth</th>
+            <th>Height in Inches</th>
             <th>&nbsp;</th>
         </tr>
         </thead>
@@ -31,11 +35,12 @@
             <td th:text="${agent.firstName}">Yellow</td>
             <td th:text="${agent.lastName}">Medium</td>
             <td th:text="${agent.dob}">Medium</td>
+            <td th:text="${agent.heightInInches}">Medium</td>
             <td>
-<!--                <a href="delete.html" th:href="@{'/tshirt/delete/' + ${tshirt.id}}"-->
-<!--                   class="btn btn-danger">Delete</a>-->
-<!--                <a href="edit.html" th:href="@{/tshirt/edit/{id}(id=${tshirt.id})}"-->
-<!--                   class="btn btn-secondary">Edit</a>-->
+                <a href="delete.html" th:href="@{'/agents/delete/' + ${agent.agentId}}"
+                   class="btn btn-danger">Delete</a>
+                <a href="update.html" th:href="@{/agents/update/{id}(id=${agent.agentId})}"
+                   class="btn btn-secondary">Edit</a>
             </td>
         </tr>
         </tbody>
